@@ -42,8 +42,64 @@ header nav ul li a:hover {
     text-decoration: underline white;
 }
 
+main .funciones {
+    margin: 50px auto;
+    padding: 20px;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    border: solid 2px black;
+    background-color: aqua;
+    border-radius: 20px;
+}
 
-/*Algebra*/
+main .funciones h3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+main .funciones p {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .funciones input {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+}
+
+main .funciones .placeholder {
+    outline: none;
+    padding: 5px;
+}
+
+main .funciones .boton {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(100, 100, 100);
+}
+
+main .funciones .boton:hover {
+    cursor: pointer;
+    background-color: rgb(145, 144, 144);
+}
+
+main .funciones .result {
+    min-height: 200px;
+    background-color: rgb(184, 180, 180);
+    border: solid 1px rgb(78, 78, 78);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+main .funciones .result .resultado {
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 footer {
     display: grid;

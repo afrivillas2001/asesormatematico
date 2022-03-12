@@ -29,4 +29,8 @@ function linear_function(operacion) {
         }
 
     }
+    if (operacion == 5) {
+
+        resultado.innerHTML = " ";
+    }
 }
