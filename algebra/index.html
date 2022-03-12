@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesor Matematico</title>
+    <link rel="shortcut icon" href="./assets/ico/74917.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title_header">Asesor matematico virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="./calculadorajs/Calculadora.html">Calculadora</a></li>
+                <li><a href="./geometria/index.html">Geometria</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Algebra</a></li>
+                <li><a href="#">Trigonometria</a></li>
+                <li><a href="./juegos/index.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="funciones">
+            <h3>Funciones lineales</h3>
+            <p>Ingresa el valor de m</p>
+            <input type="number" placeholder="Ingrese su numero aqui" id="valor_m">
+            <p>Si su operacion tiene una operacion con x especifique su numero y elija la operacion que realiza</p>
+            <input type="number" placeholder="Ingrese el numero aqui" id="operacion_mat">
+            <input type="submit" value="Suma" onclick="linear_function(1)">
+            <input type="submit" value="Resta" onclick="linear_function(2)">
+            <input type="submit" value="Multiplicacion" onclick="linear_function(3)">
+            <input type="submit" value="Division" onclick="linear_function(4)">
+            <input type="submit" value="Funcion lineal" onclick="linear_function()">
+            <div class="result">
+                <p id="resultado"></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer_info">
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Donacion</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">¿Como nos financiamos?</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Comunidad</a></li>
+        </ul>
+        <ul class="footer_socialmedia">
+            <p class="socialmedia_title">Redes Sociales</p>
+            <li>
+                <a href="#"><img src="" alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Instagram"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Telegram"></a>
+            </li>
+        </ul>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

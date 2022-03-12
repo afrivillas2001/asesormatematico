@@ -101,12 +101,17 @@ main .main-geo-calculate {
 .figura {
     display: inline-block;
     width: 25%;
-    min-height: 300px;
+    min-height: 400px;
     height: auto;
     padding: 20px;
     background-color: blueviolet;
     margin: auto;
     border-radius: 20px;
+}
+
+.figura p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 .result {
