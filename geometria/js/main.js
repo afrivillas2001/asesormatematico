@@ -76,6 +76,10 @@ function circulo_result() {
 function triangulo_result() {
     // console.log("hola3");
     let result_t = document.getElementById("result-t");
-    const triangulo_area = new Triangulo();
-    result_r.innerHTML = "El resuldato es: " + triangulo_area.area;
+    let lado_n1 = document.getElementById("triangulo_n1");
+    let base = parseFloat(lado_n1.value);
+    let lado_n2 = document.getElementById("triangulo_n2");
+    let lado = parseFloat(lado_n2.value);
+    const triangulo_area = new Triangulo(base, lado);
+    result_t.innerHTML = "El resuldato es: " + triangulo_area.area;
 }
