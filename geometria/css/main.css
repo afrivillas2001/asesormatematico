@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+header .title_header {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 10px 5px 5px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: inline-block;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: white;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline white;
+}
+
+main .main_definition {
+    width: 50%;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: blueviolet;
+}
+
+main .main-calculate {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+main .main-calculate a {
+    background-color: palegoldenrod;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+main .main-calculate a:hover {
+    background-color: papayawhip;
+}
+
+main .main-calculate a img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.main-calculate a p {
+    text-align: center;
+    color: black;
+    margin-bottom: 10px;
+}
+
+main .main-geo-calculate {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.result_container {
+    min-height: 60px;
+    background-color: rgb(228, 228, 228);
+    border: solid 1px rgb(78, 78, 78);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.result {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.figura {
+    display: inline-block;
+    width: 25%;
+    min-height: 300px;
+    height: auto;
+    padding: 20px;
+    background-color: blueviolet;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.figura h3 {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+    height: max-content;
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.figura input {
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    margin: 10px auto;
+    outline: none;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover {
+    text-decoration: underline;
+}
+
+footer .footer_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer_info li {
+    padding: 10px;
+}
+
+footer .footer_socialmedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_socialmedia li {
+    padding: 25px;
+}
+
+footer .footer_socialmedia li a img {
+    width: 40px;
+    height: 40px;
+}

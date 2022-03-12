@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+body main button{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    border: 2px solid gold;
+    border-radius: 100%;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    color: green;
+    
+    font-size: 1.8rem;
+}
+button:hover{
+    background-color: aquamarine;
+    border: none;
+    color: olive;
+    cursor: pointer;
+}

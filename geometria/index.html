@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asesor Matematico</title>
+    <link rel="shortcut icon" href="./assets/ico/74917.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title_header">Asesor matematico virtual</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../calculadorajs/Calculadora.html">Calculadora</a></li>
+                <li><a href="index.html">Geometria</a></li>
+                <li><a href="#">Economia</a></li>
+                <li><a href="#">Algebra</a></li>
+                <li><a href="#">Trigonometria</a></li>
+                <li><a href="./juegos/index.html">Juegos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main_definition">
+            <article class="definition">
+                <h2>Geometria</h2>
+                <p>La geometria es el area de las matematicas que estudia la extencion. Es decir nos ayuda a determinar cuanto miden los objetos y sus propiedades, ya sean lados, areas, perimetros.</p>
+            </article>
+        </section>
+        <section class="main-calculate">
+            <a href="../calculadorajs/Calculadora.html"><img src="https://1.bp.blogspot.com/--Jfnula2w-s/WrPTCSdhgtI/AAAAAAAIJyo/oHRaBZYUJJYca6kAiX4xKABzkSlZ8EpRwCLcBGAs/s1600/Accessories-calculator-2.png" alt="Calculadora">
+                <p>Calculadora</p>
+            </a>
+        </section>
+        <section class="main-geo-calculate">
+            <div class="figura triangulo" id="triangulo">
+                <h3>Triangulo</h3>
+                <input type="number" placeholder="Ingresa tu numero" id="triangulo_n1">
+                <input type="number" placeholder="Ingresa tu numero" id="triangulo_n2">
+                <input type="submit" value="Hallar area" onclick="triangulo_result()">
+                <div class="result_container">
+                    <p id="result-t" class="result"></p>
+                </div>
+
+            </div>
+            <div class="figura rectangulo" id="rectangulo">
+                <h3>Rectangulo o cudrado</h3>
+                <input type="number" placeholder="Ingresa tu numero" id="cuadrado_n1">
+                <input type="number" placeholder="Ingresa tu numero" id="cuadrado_n2">
+                <input type="submit" value="Hallar area" onclick="cuadrado_result()">
+                <div class="result_container">
+                    <p id="result-r" class="result"></p>
+                </div>
+            </div>
+            <div class="figura circulo" id="circulo">
+                <h3>Circulo</h3>
+                <input type="number" placeholder="Ingresa tu numero" id="circulo_n1">
+                <input type="submit" value="Hallar area" onclick="circulo_result()">
+                <div class="result_container">
+                    <p id="result-c" class="result"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <ul class="footer_info">
+            <li><a href="#">Sobre nosotros</a></li>
+            <li><a href="#">Donacion</a></li>
+            <li><a href="#">Terminos y condiciones</a></li>
+            <li><a href="#">¿Como nos financiamos?</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Comunidad</a></li>
+        </ul>
+        <ul class="footer_socialmedia">
+            <p class="socialmedia_title">Redes Sociales</p>
+            <li>
+                <a href="#"><img src="" alt="Facebook"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Instagram"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Twitter"></a>
+            </li>
+            <li>
+                <a href="#"><img src="" alt="Telegram"></a>
+            </li>
+        </ul>
+
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

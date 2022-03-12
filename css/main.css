@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+header .title_header{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 5px 10px 5px 5px;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+}
+header nav ul{
+    display: inline-block;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    color: white;
+}
+header nav ul li a:hover{
+    text-decoration: underline white;
+}
+main{
+    padding: 100px;
+    background-color: blueviolet;
+}
+main .main_nav-bar h3{
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main .main_nav-bar .main_nav_images{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+main .main_nav-bar .main_nav_images a{
+    cursor: default;
+    margin: 10px;
+    padding: 20px;
+    background-color: aquamarine;
+}
+main .main_nav-bar a img{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+aside{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+aside .aside_container{
+    background-color: green;
+    margin: 20px;
+    height: 500px;
+}
+aside .aside_container .aside_title{
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(78, 74, 74);
+    background-color: yellowgreen;
+}
+aside .aside_container img{
+    display: block;
+    margin: auto;
+    justify-items: center;
+    width: 200px;
+    height: 200px;
+    padding: 40px;
+}
+aside button{
+    width: 100%;
+    margin-top: 125px;
+    height: 40px;
+    border: none;
+    background-color: rgb(48, 43, 43);
+    cursor: pointer;
+    color: white;
+}
+aside button:hover{
+    background-color: rgb(94, 89, 89);
+}
+.publicity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: blue;
+}
+footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+}
+footer ul{
+    list-style: none;
+}
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+footer ul a:hover{
+    text-decoration: underline;
+}
+footer .footer_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer_info li{
+    padding: 10px;
+}
+footer .footer_socialmedia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .footer_socialmedia li{
+    padding: 25px;
+}
+footer .footer_socialmedia li a img{
+    width: 40px;
+    height: 40px;
+}
+
+
