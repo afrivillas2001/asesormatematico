@@ -1,13 +1,7 @@
-function numero_aleatorio(){
-    let min = 0;
-    let max = 9;
-    return Math.floor(Math.random() * (max - min) + min);
-}
-function conteo_numeros(max_numbers){
-    const random_number = numero_aleatorio();
-    let conteo = numero_aleatorio();
-    for(i = 0 i > 4){
-        let array = [i];
-        document.write(array);
-    }
+function empezar() {
+    let resultado = document.getElementById("resultado");
+    resultado.innerHTML += Math.floor(Math.random() * (9 - 0) + 0);
+    resultado.innerHTML += Math.floor(Math.random() * (9 - 0) + 0);
+    resultado.innerHTML += Math.floor(Math.random() * (9 - 0) + 0);
+    resultado.innerHTML += Math.floor(Math.random() * (9 - 0) + 0);
 }

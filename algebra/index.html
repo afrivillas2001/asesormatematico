@@ -15,33 +15,70 @@
         <h1 class="title_header">Asesor matematico virtual</h1>
         <nav>
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./calculadorajs/Calculadora.html">Calculadora</a></li>
-                <li><a href="./geometria/index.html">Geometria</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../calculadorajs/Calculadora.html">Calculadora</a></li>
+                <li><a href="../geometria/index.html">Geometria</a></li>
                 <li><a href="#">Economia</a></li>
                 <li><a href="#">Algebra</a></li>
                 <li><a href="#">Trigonometria</a></li>
-                <li><a href="./juegos/index.html">Juegos</a></li>
+                <li><a href="../juegos/index.html">Juegos</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="funciones">
-            <h3>Funciones lineales</h3>
-            <p>Ingresa el valor de m</p>
-            <input type="number" placeholder="Ingrese su numero aqui" id="valor_m" class="placeholder">
-            <p>Si su operacion tiene una operacion con x especifique su numero y elija la operacion que realiza</p>
-            <input type="number" placeholder="Ingrese el numero aqui" id="operacion_mat" class="placeholder">
-            <input type="submit" value="Suma" onclick="linear_function(1)" class="boton">
-            <input type="submit" value="Resta" onclick="linear_function(2)" class="boton">
-            <input type="submit" value="Multiplicacion" onclick="linear_function(3)" class="boton">
-            <input type="submit" value="Division" onclick="linear_function(4)" class="boton">
-            <input type="submit" value="Reset" onclick="linear_function(5)" class="boton">
-            <input type="submit" value="Funcion lineal" onclick="linear_function()" class="boton">
-            <div class="result">
-                <p id="resultado"></p>
-            </div>
-        </section>
+        <h3 class="title_page">Escoje la calculadora que necesitas</h3>
+        <div class="opciones">
+            <button id="abrir" class="abrir">Funciones lineales</button>
+            <button id="abrir_e" class="abrir">Ecuaciones de primer grado</button>
+        </div>
+        <dialog class="dialog_window">
+            <section class="funciones">
+                <h3>Ecuaciones</h3>
+                <p>Indique la operacion de x (x + n)</p>
+                <input type="number" placeholder="Ingrese su numero" id="operacion_x" class="placeholder">
+                <input type="submit" value="Suma" class="boton" onclick="ecuaciones_primer_grado(1)">
+                <input type="submit" value="Resta" class="boton" onclick="ecuaciones_primer_grado(2)">
+                <input type="submit" value="Multiplicacion" class="boton" onclick="ecuaciones_primer_grado(3)">
+                <input type="submit" value="Division" class="boton" onclick="ecuaciones_primer_grado(4)">
+                <p>Indique la operacion que realiza la igualdad (x + n = y + z)</p>
+                <input type="number" placeholder="Ingrese el numero aqui" id="operacion_mat_e" class="placeholder">
+                <p>Indique el otro numero a operar</p>
+                <input type="number" placeholder="Ingrese el numero aqui" id="operacion_mat_z" class="placeholder">
+                <input type="submit" value="Suma" class="boton" onclick="ecuaciones_primer_grado(1)">
+                <input type="submit" value="Resta" class="boton" onclick="ecuaciones_primer_grado(2)">
+                <input type="submit" value="Multiplicacion" class="boton" onclick="ecuaciones_primer_grado(3)">
+                <input type="submit" value="Division" class="boton" onclick="ecuaciones_primer_grado(4)">
+                <input type="submit" value="Reset" class="boton" onclick="ecuaciones_primer_grado(5)">
+                <div class="result">
+
+                    <p id="resultado_e"></p>
+                </div>
+            </section>
+            <button id="cerrar_e">cerrar</button>
+        </dialog>
+
+
+        <dialog class="dialog_window">
+            <section class="funciones">
+                <h3>Funciones lineales</h3>
+                <p>Ingresa el valor de m</p>
+                <input type="number" placeholder="Ingrese su numero aqui" id="valor_m" class="placeholder">
+                <p>Si su operacion tiene una operacion con x especifique su numero y elija la operacion que realiza</p>
+                <input type="number" placeholder="Ingrese el numero aqui" id="operacion_mat" class="placeholder">
+                <input type="submit" value="Suma" onclick="linear_function(1)" class="boton">
+                <input type="submit" value="Resta" onclick="linear_function(2)" class="boton">
+                <input type="submit" value="Multiplicacion" onclick="linear_function(3)" class="boton">
+                <input type="submit" value="Division" onclick="linear_function(4)" class="boton">
+                <input type="submit" value="Funcion lineal" onclick="linear_function()" class="boton">
+                <input type="submit" value="Reset" onclick="linear_function(5)" class="boton">
+                <div class="result">
+                    <p id="resultado"></p>
+                </div>
+            </section>
+            <button id="cerrar">cerrar</button>
+        </dialog>
+
+
     </main>
     <footer>
         <ul class="footer_info">
@@ -69,6 +106,20 @@
         </ul>
 
     </footer>
+    <script>
+        //funciones lineales (ventana)
+        const dialog = document.querySelector('dialog');
+        const cancel = document.querySelector('#cerrar');
+        const abrir = document.querySelector('#abrir');
+        abrir.addEventListener('click', () => dialog.showModal());
+        cancel.addEventListener('click', () => dialog.close());
+        //ecuaciones de primer grado
+        const dialog_e = document.querySelector('dialog');
+        const cancel_e = document.querySelector('#cerrar_e');
+        const abrir_E = document.querySelector('#abrir_e');
+        abrir_e.addEventListener('click', () => dialog.showModal());
+        cancel_e.addEventListener('click', () => dialog.close());
+    </script>
     <script src="./js/main.js"></script>
 </body>
 

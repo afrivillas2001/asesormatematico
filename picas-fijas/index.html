@@ -10,27 +10,12 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="title_header">Asesor matematico virtual</h1>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../calculadorajs/Calculadora.html">Calculadora</a></li>
-                <li><a href="#">Geometria</a></li>
-                <li><a href="#">Economia</a></li>
-                <li><a href="#">Algebra</a></li>
-                <li><a href="#">Trigonometria</a></li>
-                <li><a href="../juegos/index.html">Juegos</a></li>
-            </ul>
-        </nav>
-    </header>
     <main>
-        <form action="/">
-            <input type="number" id="user-number">
-            <input type="button" value="Evaluar" id="value">
-        </form>
-        <section>
-
+        <section class="jueguito" id="jueguito" onclick="empezar()">
+            <input type="submit" value="Empezar">
+            <input type="number" id="user_number">
+            <input type="submit" value="Evaluar">
+            <p id="resultado"></p>
         </section>
     </main>
     <script src="./js/index.js"></script>

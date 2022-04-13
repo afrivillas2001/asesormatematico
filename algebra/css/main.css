@@ -3,6 +3,16 @@
     margin: 0;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+    padding: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 5px;
+}
+
 header {
     width: 100%;
     height: auto;
@@ -42,6 +52,75 @@ header nav ul li a:hover {
     text-decoration: underline white;
 }
 
+main {
+    min-height: 100vh;
+    max-height: auto;
+    max-width: 100%;
+    min-width: auto;
+}
+
+main .title_page {
+    width: 80%;
+    margin: 25px auto;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: blueviolet;
+}
+
+main .opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .abrir {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background-color: gray;
+}
+
+main button:hover {
+    background-color: slategrey;
+}
+
+.dialog_window {
+    width: 70%;
+    margin: 40px auto;
+    max-height: 500px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+
+.dialog_window::-webkit-scrollbar {
+    display: none;
+}
+
+.dialog_window button {
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    background-color: gray;
+}
+
+.dialog_window button:hover {
+    text-decoration: underline;
+    background-color: slategrey;
+}
+
+main .funciones h3 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 main .funciones {
     margin: 50px auto;
     padding: 20px;
@@ -50,14 +129,6 @@ main .funciones {
     height: auto;
     border: solid 2px black;
     background-color: aqua;
-    border-radius: 20px;
-}
-
-main .funciones h3 {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
     border-radius: 20px;
 }
 
